@@ -1,0 +1,24 @@
+{
+  "name": "chat-bot",
+  "version": "1.0.0",
+  "description": "A native Facebook chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ledleds/chatbot.git"
+  },
+  "author": "Vicky Ledsom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ledleds/chatbot/issues"
+  },
+  "homepage": "https://github.com/ledleds/chatbot#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
