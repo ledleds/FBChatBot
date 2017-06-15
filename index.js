@@ -6,6 +6,8 @@ const express = require('express'),
 
 const app = express();
 
+app.set('port', (process.env.PORT || 5000))
+
 // Allows us to process the data
  app.use(bodyParser.urlencoded({extended: false}));
  app.use(bodyParser.json());
@@ -21,6 +23,6 @@ const app = express();
    res.send("Wrong token");
  });
 
- app.listen(5000, function() {
-   console.log("CHATBOT LISTENING ON 5000");
+ app.listen(app.get('port'), function() {
+   console.log("running: port");
  });
