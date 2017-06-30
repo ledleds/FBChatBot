@@ -17,7 +17,7 @@ app.set('port', (process.env.PORT || 5000))
  });
 
  app.get('/webhook/', function(req, res) {
-   if (req.query['hub.verify_token'] === FACEBOOK_VERIFY_CODE) {
+   if (req.query['hub.verify_token'] === 'vickybot') {
      res.send(req.query['hub.challenge']);
    }
    res.send("Wrong token");
